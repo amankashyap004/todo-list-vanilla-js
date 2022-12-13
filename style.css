@@ -1,0 +1,163 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Verdana, sans-serif;
+}
+
+.header {
+   background-color: rgb(0, 0, 50);
+   padding: 1.4rem 2rem;
+}
+
+.title-text {
+   font-size: 1.5rem;
+   font-weight: 600;
+   color: white;
+}
+
+.main-body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.form {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 1rem 0;
+}
+
+.input {
+   padding: 0.8rem;
+   border: 2px solid rgb(53, 0, 0);
+   border-radius: 5px;
+   font-size: 1rem;
+   font-weight: 600;
+   margin: 0.5rem;
+   outline: none;
+   width: 30vw;
+}
+
+.btn {
+   padding: 0.8rem 2rem;
+   cursor: pointer;
+   background-color: aqua;
+   border: none;
+   border-radius: 5px;
+   font-size: 1rem;
+   font-weight: 600;
+   transition: all 0.5s ease;
+   border: 2px solid rgb(30, 0, 0);
+}
+
+.btn:hover {
+   background-color: rgba(0, 255, 255, 0.37);
+}
+
+.btn:active {
+   transform: scale(1.03);
+}
+
+.remove-btn:hover {
+   background-color: rgba(255, 0, 0, 0.584);
+}
+
+.container {
+   margin-top: 1rem;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+}
+
+.list-box {
+   border-radius: 10px;
+   width: 80vw;
+   border: 2px solid black;
+   box-shadow: 0 0 5px 1px black;
+}
+
+.sub-title {
+   font-size: 1.2rem;
+   border-radius: 8px 8px 0 0;
+   border-bottom: 1px solid rgb(0, 0, 0);
+   box-shadow: 0 1px 2px 1px black;
+   padding: 0.7rem 0;
+   text-align: center;
+   color: rgb(6, 0, 88);
+   text-shadow: 2px 2px 5px rgb(133, 133, 133);
+}
+
+.list {
+   padding: 0.8rem;
+   font-size: 1rem;
+   font-weight: 600;
+}
+
+.todo-box-title {
+   margin: 1rem;
+}
+
+.todo-para {
+   color: rgb(61, 24, 0);
+   font-size: 1.1rem;
+   text-transform: capitalize;
+}
+
+.todo-box {
+   font-size: 1rem;
+   background-color: rgb(207, 237, 237);
+   border: 2px solid black;
+   padding: 1rem;
+   border-radius: 5px;
+   margin-top: 0.5rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+
+.todo-title {
+   color: rgb(0, 0, 47);
+   font-size: 1.2rem;
+   text-transform: capitalize;
+   margin-bottom: 0.8rem;
+}
+
+.todo-description {
+   color: rgb(0, 78, 94);
+   font-size: 1rem;
+}
+
+@media screen and (max-width: 650px) {
+   .input {
+      padding: 0.6rem;
+      width: 90vw;
+   }
+
+   .add-btn {
+      padding: 0.6rem 4rem;
+      margin-top: 0.8rem;
+   }
+
+   .remove-btn {
+      padding: 0.4rem;
+   }
+
+   .list-box {
+      width: 95vw;
+   }
+
+   .form {
+      flex-direction: column;
+      margin: 1rem 0;
+   }
+
+   .container {
+      margin-top: 0.6rem;
+   }
+}
