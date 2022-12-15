@@ -34,9 +34,13 @@ formBtn.addEventListener("click", (event) => {
    newTextSection.append(newPara);
    newItem.append(newRemoveBtn);
 
+   // Local Storage
+   localStorage.setItem(`todo`, JSON.stringify([inputValueTitle, inputValueDescription]));
+
    newRemoveBtn.addEventListener("click", function (event) {
       event.preventDefault();
       newItem.remove();
+      localStorage.removeItem("todo");
    });
 
    formInputTitle.value = "";
